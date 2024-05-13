@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turn On/Off Bulb</title>
+</head>
+<body>
+
+<button onclick="turnOn()">Turn On</button>
+<button onclick="turnOff()">Turn Off</button>
+<br><br>
+<img id="bulb" src="lampard.gif" alt="Bulb" style="display: none;">
+
+<script>
+  function turnOn() {
+    document.getElementById('bulb').style.display = 'inline'; // Display the bulb GIF
+  }
+
+  function turnOff() {
+    document.getElementById('bulb').style.display = 'none'; // Hide the bulb GIF
+  }
+</script>
+
+</body>
+</html>

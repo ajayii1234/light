@@ -8,6 +8,8 @@
   /* Hide the images by default */
   #image-off, #image-on {
     display: none;
+    max-width: 200px; /* Set maximum width for the images */
+    height: auto; /* Maintain aspect ratio */
   }
 </style>
 </head>
@@ -16,18 +18,18 @@
 <button onclick="turnOn()">Turn On</button>
 <button onclick="turnOff()">Turn Off</button>
 <br><br>
-<img id="image-off" src="lightoff.png" alt="Imageoff">
-<img id="image-on" src="lighton.png" alt="Imageon">
+<img id="image-off" src="lightoff1.png" alt="Imageoff">
+<img id="image-on" src="lighton1.png" alt="Imageon">
 
 <script>
   function turnOn() {
-    document.getElementById('image-on').style.display = 'inline'; // Display the "lighton.png" image
+    document.getElementById('image-on').style.display = 'block'; // Display the "lighton.png" image
     document.getElementById('image-off').style.display = 'none'; // Hide the "lightoff.png" image
   }
 
   function turnOff() {
     document.getElementById('image-on').style.display = 'none'; // Hide the "lighton.png" image
-    document.getElementById('image-off').style.display = 'inline'; // Display the "lightoff.png" image
+    document.getElementById('image-off').style.display = 'block'; // Display the "lightoff.png" image
   }
 </script>
 
