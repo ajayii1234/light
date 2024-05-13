@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turn On/Off Image</title>
+<style>
+  /* Hide the images by default */
+  #image-off, #image-on {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<button onclick="turnOn()">Turn On</button>
+<button onclick="turnOff()">Turn Off</button>
+<br><br>
+<img id="image-off" src="lightoff.png" alt="Imageoff">
+<img id="image-on" src="lighton.png" alt="Imageon">
+
+<script>
+  function turnOn() {
+    document.getElementById('image-on').style.display = 'inline'; // Display the "lighton.png" image
+    document.getElementById('image-off').style.display = 'none'; // Hide the "lightoff.png" image
+  }
+
+  function turnOff() {
+    document.getElementById('image-on').style.display = 'none'; // Hide the "lighton.png" image
+    document.getElementById('image-off').style.display = 'inline'; // Display the "lightoff.png" image
+  }
+</script>
+
+</body>
+</html>
